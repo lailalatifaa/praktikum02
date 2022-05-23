@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    <form action="login_proses.php" method="POST">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="username..." patttern="[a-zA-z0-9]{8-12}" minlength="8" maxlength="16" required="autofocus" data-errormessage-value-missing="Please fill out this field"/>
+            </p>
+            <p>
+                <label>Password</label>
+                <input type="text" name="password" placeholder="password..." minlength="6" maxlength="12" pattern= "[a-zA-z0-9{8-12}" required="autofocus" data-errormessage-value-missing="Please fill out this field"/>
+            </p>
+            <p>
+                <label><input type="checkbox" name="remember" value="remember"/> Remember me</</label>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Login" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
